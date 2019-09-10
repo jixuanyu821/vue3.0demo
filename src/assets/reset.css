@@ -1,0 +1,26 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { color:#4D4D4D; font-size:14px; font-family: "Arial","Microsoft YaHei","宋体",sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#4D4D4D; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px "Microsoft YaHei","宋体",sans-serif;color: #4c4c4c;  }
+table { border-collapse:collapse; }
+html {overflow-y: hidden;} 
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }/*公共类*/
+.clear{width: 0;height: 0;visibility: hidden;clear: both;}
+.fl { float:left}
+.fr {float:right}
+.al {text-align:left}
+.ac {text-align:center}
+.ar {text-align:right}
+.hide {display:none}
+*{box-sizing: border-box;}
+html,body{height: 100%;}
+::-webkit-scrollbar{width: 6px;background-color: #fff;}
+::-webkit-scrollbar-thumb{width: 6px;background-color: rgba(0, 0, 0, 0.1);border-radius: 3px;}
+small{font-size: 0.6em;}
