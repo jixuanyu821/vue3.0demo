@@ -3,11 +3,11 @@ module.exports = {
     devServer: {
         proxy: { //设置代理服务器
             '/': {
-                target: 'http://192.168.2.23/', //目标地址
+                target: 'http://10.19.179.43:9012/riskwarning/', //目标地址
                 changeOrigin: true, //虚拟路径托管
                 ws: false, //代理websockets
                 pathRewrite: {
-                    '^/': '/'
+                    '^/riskwarning/': '/'
                 }
             }
         },
