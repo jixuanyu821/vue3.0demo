@@ -4,6 +4,7 @@
     <div class="content">
       <p>{{msg}}</p>
       <router-link to="/about">{{msg}}</router-link>
+      <div @click="$router.push({name:'child'})">router</div>
     </div>
   </div>
 </template>
@@ -16,16 +17,12 @@ export default {
     msg: String
   },
   methods: {
-    getAjax() {
-      axios
-        .post("/archives/listUI", { SFZH: "330722186210240003" })
-        .then(res => {
-          console.log(res);
-        });
-    }
   },
   mounted() {
-    this.getAjax();
+    axios.get('/').then((res)=>{
+      // eslint-disable-next-line no-console
+      console.log(res)
+    })
   }
 };
 </script>
